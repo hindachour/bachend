@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription des Électeurs</title>
+</head>
+<body>
+    <h1>Inscription des Électeurs</h1>
+    <form action="Inscrire.php" method="post">
+        <label for="numero">Numéro:</label>
+        <input type="text" id="num" name="num" required><br>
+
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" required><br>
+
+        <label for="prenom">Prénom:</label>
+        <input type="text" id="prenom" name="prenom" required><br>
+
+        <label>Genre:</label>
+        <input type="radio" id="fille" name="r1" value="F" required>
+        <label for="fille">Fille</label>
+        <input type="radio" id="garcon" name="r1" value="G" required>
+        <label for="garcon">Garçon</label><br>
+
+        <label for="niveau">Niveau scolaire:</label>
+        <select id="niveau" name="niveau" required>
+            <option value="7eme">7ème</option>
+            <option value="8eme">8ème</option>
+            <option value="9eme">9ème</option>
+        </select><br>
+
+        <label>Candidat:</label>
+        <input type="radio" id="oui" name="r2" value="O" required>
+        <label for="oui">Oui</label>
+        <input type="radio" id="non" name="r2" value="N" required>
+        <label for="non">Non</label><br>
+
+        <input type="submit" value="Inscrire">
+        <input type="reset" value="Annuler">
+    </form>
+</body>
+</html>

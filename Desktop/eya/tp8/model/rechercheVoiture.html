@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche Voiture</title>
+</head>
+<body>
+    <form action="recherche_voiture_action.php" method="POST">
+        <legend>Chercher une voiture</legend>
+        <label for="carburant">Carburant :</label>
+        <select name="carburant" id="carburant" required>
+            <option value="">Sélectionnez le carburant</option>
+            <option value="Essence">Essence</option>
+            <option value="Diesel">Diesel</option>
+        </select>
+        <input type="submit" value="Rechercher">
+    </form>
+</body>
+</html>
